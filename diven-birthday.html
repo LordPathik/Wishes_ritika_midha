@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Diven! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .birthday-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .emoji-row {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .message {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .highlight {
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .cake-section {
+            margin: 30px 0;
+            font-size: 4em;
+            animation: rotate 3s ease-in-out infinite;
+        }
+        
+        @keyframes rotate {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+        
+        .wishes {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #f39c12;
+            animation: confetti 3s ease-in-out infinite;
+        }
+        
+        @keyframes confetti {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+        
+        .confetti:nth-child(1) { left: 10%; animation-delay: 0s; background: #e74c3c; }
+        .confetti:nth-child(2) { left: 20%; animation-delay: 0.5s; background: #f39c12; }
+        .confetti:nth-child(3) { left: 30%; animation-delay: 1s; background: #2ecc71; }
+        .confetti:nth-child(4) { left: 40%; animation-delay: 1.5s; background: #3498db; }
+        .confetti:nth-child(5) { left: 50%; animation-delay: 2s; background: #9b59b6; }
+        .confetti:nth-child(6) { left: 60%; animation-delay: 0.3s; background: #e67e22; }
+        .confetti:nth-child(7) { left: 70%; animation-delay: 0.8s; background: #1abc9c; }
+        .confetti:nth-child(8) { left: 80%; animation-delay: 1.3s; background: #34495e; }
+        .confetti:nth-child(9) { left: 90%; animation-delay: 1.8s; background: #e91e63; }
+        
+        @media (max-width: 600px) {
+            .birthday-card {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .emoji-row {
+                font-size: 2.5em;
+            }
+            
+            .cake-section {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Confetti Animation -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    
+    <div class="birthday-card">
+        <div class="emoji-row">🎈🎉🥳🎂🎈</div>
+        
+        <h1>Happy Birthday, Diven!</h1>
+        
+        <div class="message">
+            Hey there! 🌟<br><br>
+            
+            It feels like just yesterday we were back in <span class="highlight">undergrad</span> making memories and laughing at the most random things. I'm really grateful that we got to know each other during that time!<br><br>
+            
+            I hope today brings you as much <span class="highlight">joy</span> as you've brought to the people around you.
+        </div>
+        
+        <div class="cake-section">🎂</div>
+        
+        <div class="wishes">
+            Here's to another year of adventures, growth, and good times ahead! 
+            May all your dreams come true! ✨
+        </div>
+        
+        <div class="message">
+            Enjoy your day to the fullest—you <span class="highlight">deserve it!</span><br>
+            Hope you get to celebrate in style! 🎊
+        </div>
+        
+        <div class="signature">
+            Cheers,<br>
+            <strong>Your Friend</strong> ❤️
+        </div>
+    </div>
+</body>
+</html>
